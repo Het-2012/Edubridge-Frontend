@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EduBridge</title>
+<style>
+    body {
+        margin: 0;
+        font-family: 'Segoe UI', Tahoma, sans-serif;
+        background: linear-gradient(135deg, #4e54c8, #8f94fb);
+        color: white;
+    }
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 50px;
+        background: rgba(0, 0, 0, 0.2);
+        position: sticky;
+        top: 0;
+    }
+    header h1 {
+        font-size: 28px;
+        letter-spacing: 1px;
+    }
+    nav a {
+        color: white;
+        text-decoration: none;
+        margin: 0 15px;
+        font-weight: 500;
+        transition: color 0.3s ease;
+    }
+    nav a:hover {
+        color: #ffd700;
+    }
+    .hero {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 90vh;
+        padding: 0 50px;
+        gap: 40px;
+    }
+    .hero-text {
+        flex: 1;
+        max-width: 600px;
+    }
+    .hero-text h2 {
+        font-size: 40px;
+        margin-bottom: 15px;
+    }
+    .hero-text p {
+        font-size: 18px;
+        line-height: 1.6;
+    }
+    .hero-image {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+    }
+    .hero-image img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 12px;
+        box-shadow: 0 6px 17px rgba(0, 0, 0, 0.3);
+    }
+    @media (max-width: 900px) {
+        .hero {
+            flex-direction: column;
+            text-align: center;
+        }
+        .hero-text {
+            max-width: 100%;
+        }
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>EduBridge</h1>
+    <nav>
+        <a href="login.html">Login</a>
+        <a href="register.html">Register</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-text">
+        <h2>Connecting Teachers and Students, Seamlessly</h2>
+        <p>EduBridge is your gateway to interactive, distraction-free, and innovative online learning. Join our platform and experience the future of education.</p>
+    </div>
+    <div class="hero-image">
+        <img src="c:\Users\pankaj sheta\OneDrive\Documents\Desktop\image m.jpg" alt="Online Meeting">
+    </div>
+</section>
+
+</body>
+</html>

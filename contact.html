@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - EduBridge</title>
+    <style>
+        body { margin: 0; font-family: Arial, sans-serif; background: #f0f2f5; color: #333; }
+        nav { background: #8f94fb; padding: 10px; display: flex; justify-content: center; gap: 20px; }
+        nav a { color: white; text-decoration: none; font-weight: bold; }
+        nav a:hover { color: #ffd700; }
+        .container { max-width: 900px; margin: auto; padding: 20px; }
+        form { background: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+        input, textarea { width: 100%; padding: 10px; margin: 10px 0; border-radius: 5px; border: 1px solid #ccc; }
+        button { background: #8f94fb; color: white; padding: 12px 20px; border: none; border-radius: 6px; cursor: pointer; }
+        button:hover { background: #8f94fb; }
+        .team { margin-top: 30px; display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+        .member { background: white; padding: 15px; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
+        .member h3 { margin: 0; color: #8f94fb; }
+        .member p { margin: 5px 0; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>EduBridge</h1>
+        <p>Empowering Virtual Learning</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="login.html">Login</a>
+    </nav>
+
+    <div class="container">
+        <form onsubmit="contactSubmit(event)">
+            <h1>Contact Us</h1>
+            <input type="text" placeholder="Your Name" required />
+            <input type="email" placeholder="Your Email" required />
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+
+        <div class="team">
+            <div class="member">
+                <h3>Het Sheta</h3>
+                <p>Email: het.sheta@example.com</p>
+                <p>Contact: +91 98765 43210</p>
+            </div>
+            <div class="member">
+                <h3>Darshan Tank</h3>
+                <p>Email: darshan.t@example.com</p>
+                <p>Contact: +91 98765 43211</p>
+            </div>
+            <div class="member">
+                <h3>aastha Thakkar</h3>
+                <p>Email: aastha.t@example.com</p>
+                <p>Contact: +91 98765 43212</p>
+            </div>
+            <div class="member">
+                <h3>kshitj Shah</h3>
+                <p>Email: shah.kb@example.com</p>
+                <p>Contact: +91 98765 43213</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 EduBridge. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function contactSubmit(event) {
+            event.preventDefault();
+            alert("📩 Your message has been sent successfully!");
+        }
+    </script>
+</body>
+</html>
